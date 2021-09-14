@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class LoadedView extends StatelessWidget {
+  const LoadedView({Key? key}) : super(key: key);
+
   Future _refreshList(BuildContext context) async {
     // here call showNews on the controller
   }
