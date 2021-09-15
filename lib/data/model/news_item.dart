@@ -39,18 +39,18 @@ class NewsItem {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['type'] = this.type;
-    data['sectionId'] = this.sectionId;
-    data['sectionName'] = this.sectionName;
-    data['webPublicationDate'] = this.webPublicationDate;
-    data['webTitle'] = this.webTitle;
-    data['webUrl'] = this.webUrl;
-    data['apiUrl'] = this.apiUrl;
-    data['isHosted'] = this.isHosted;
-    data['pillarId'] = this.pillarId;
-    data['pillarName'] = this.pillarName;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['id'] = id;
+    data['type'] = type;
+    data['sectionId'] = sectionId;
+    data['sectionName'] = sectionName;
+    data['webPublicationDate'] = webPublicationDate;
+    data['webTitle'] = webTitle;
+    data['webUrl'] = webUrl;
+    data['apiUrl'] = apiUrl;
+    data['isHosted'] = isHosted;
+    data['pillarId'] = pillarId;
+    data['pillarName'] = pillarName;
     return data;
   }
 }
