@@ -1,4 +1,4 @@
-import 'package:f_web_service_template/data/news_item.dart';
+import 'package:f_web_service_template/data/model/news_item.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

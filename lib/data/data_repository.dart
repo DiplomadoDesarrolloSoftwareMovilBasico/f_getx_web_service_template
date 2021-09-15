@@ -1,5 +1,5 @@
-import 'guardian_client.dart';
-import 'news_item.dart';
+import 'remote/guardian_client.dart';
+import 'model/news_item.dart';
 
 class DataRepository {
   late TheGuardianClient client;
