@@ -2,6 +2,7 @@ import 'package:f_web_service_template/data/model/news_item.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loggy/loggy.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class NewsDetailPage extends StatefulWidget {
   const NewsDetailPage({Key? key}) : super(key: key);
