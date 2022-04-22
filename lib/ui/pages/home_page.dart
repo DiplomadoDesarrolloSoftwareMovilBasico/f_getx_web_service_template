@@ -11,10 +11,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.only(top: 22, right: 2, left: 2),
+        padding: const EdgeInsets.only(top: 22, right: 2, left: 2),
         child: Column(
           children: [
-            Image(image: AssetImage("assets/images/logo.png")),
+            const Image(image: AssetImage("assets/images/logo.png")),
             Container(child: Text('Logic goes here'))
           ],
         ),

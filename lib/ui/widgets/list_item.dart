@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 
 class ListItem extends StatelessWidget {
   final NewsItem news;
-  ListItem(this.news);
+  const ListItem(this.news, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class ListItem extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             ListTile(
-              leading: Icon(Icons.album),
+              leading: const Icon(Icons.album),
               title: Text(news.webTitle!),
               subtitle: Text(news.sectionName!),
             ),
@@ -23,7 +23,7 @@ class ListItem extends StatelessWidget {
               onPressed: () {
                 Get.toNamed(DETAIL_ROUTE, arguments: news);
               },
-              child: Text("Read more"),
+              child: const Text("Read more"),
             )
           ],
         ),

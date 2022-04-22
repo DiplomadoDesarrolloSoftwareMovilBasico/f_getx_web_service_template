@@ -18,14 +18,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.16.2 <3.0.0"
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
   flutter:
@@ -33,13 +27,15 @@ dependencies:
   get: ^4.3.8
   http: ^0.13.3
   loggy: ^2.0.1
-
+  webview_flutter: ^3.0.2
+  
 dev_dependencies:
+  flutter_lints: ^1.0.0
   integration_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
   flutter_test:
     sdk: flutter
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

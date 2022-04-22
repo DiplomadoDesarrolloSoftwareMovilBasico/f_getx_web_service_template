@@ -1,8 +1,7 @@
+import 'dart:convert';
 import 'package:loggy/loggy.dart';
-
 import '../model/news_item.dart';
 import 'package:http/http.dart' as http;
-import 'dart:convert' as convert;
 
 class TheGuardianClient {
   static const baseUrl = "https://content.guardianapis.com";
@@ -15,7 +14,7 @@ class TheGuardianClient {
     var uri = Uri.parse("https://content.guardianapis.com/search")
         .resolveUri(Uri(queryParameters: {
       "api-key": apikey,
-      "q": "football/football",
+      "q": topic,
     }));
 
     logInfo('Client getItems URI ${uri.toString()}');
@@ -24,7 +23,7 @@ class TheGuardianClient {
       final response = await http.get(uri).timeout(Duration(seconds: 1));
       if (response.statusCode == 200) {
         logInfo("Got code 200");
-        var jsonResponse = convert.jsonDecode(response.body);
+        var jsonResponse = json.decode(utf8.decode(response.bodyBytes));
         int itemCount = jsonResponse['response']['total'];
         logInfo("We got $itemCount items");
 

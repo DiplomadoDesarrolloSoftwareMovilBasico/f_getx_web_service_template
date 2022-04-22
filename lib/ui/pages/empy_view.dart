@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:loggy/loggy.dart';
 
 class EmptyNews extends StatelessWidget {
   const EmptyNews({Key? key}) : super(key: key);
@@ -12,9 +13,9 @@ class EmptyNews extends StatelessWidget {
       children: [
         ElevatedButton(
           onPressed: () {
-            print("getting news");
+            logInfo("getting news");
           },
-          child: Text("Football news"),
+          child: const Text("Sport news"),
         ),
       ],
     ));
