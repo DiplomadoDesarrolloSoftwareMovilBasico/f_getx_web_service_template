@@ -1,6 +1,6 @@
-import 'remote/guardian_client.dart';
-import 'model/news_item.dart';
-import '../common/configuration.dart';
+import '../../common/configuration.dart';
+import '../../data/model/news_item.dart';
+import '../../data/remote/guardian_client.dart';
 
 class DataRepository {
   late TheGuardianClient client;
