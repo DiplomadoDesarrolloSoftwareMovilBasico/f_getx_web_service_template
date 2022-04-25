@@ -2,7 +2,7 @@
 
 A template of the use of HTTP package with the GetX library
 
-Work on HomePage, NewsController and Use case
+Work on HomePage, EmptyView, LoadedView, NewsController and Use case
 
 Private:
 https://github.com/augustosalazar/f_getx_news_reader
