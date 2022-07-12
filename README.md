@@ -13,4 +13,4 @@ flutter drive --driver test_driver/integration_test.dart --target integration_te
 
 ![Alt text](demoOK.gif?raw=true "Demo Ok")
 
-![Alt text](demoTimeOut.gif?raw=true "Demo with Timeout")
+<img src="demoTimeOut.gif" width=75% height=75%>
