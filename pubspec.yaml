@@ -24,7 +24,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
-  get: ^4.3.8
+  get: ^4.6.5
   http: ^0.13.3
   loggy: ^2.0.1
   webview_flutter: ^3.0.2
@@ -35,7 +35,7 @@ dev_dependencies:
     sdk: flutter
   flutter_test:
     sdk: flutter
-
+  mockito: ^5.0.16
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
