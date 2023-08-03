@@ -25,9 +25,12 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.5
-  http: ^0.13.3
+  http: ^1.1.0
   loggy: ^2.0.1
-  webview_flutter: ^3.0.2
+  webview_flutter: ^4.2.2
+  webview_flutter_android: ^3.0.0
+  webview_flutter_platform_interface: ^2.3.0
+  webview_flutter_wkwebview: ^3.0.0
   
 dev_dependencies:
   flutter_lints: ^1.0.0

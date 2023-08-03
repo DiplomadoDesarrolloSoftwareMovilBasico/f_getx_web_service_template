@@ -1,6 +1,6 @@
 {
-    "name": "f_web_service_template",
-    "short_name": "f_web_service_template",
+    "name": "f_getx_web_service_template",
+    "short_name": "f_getx_web_service_template",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -13,33 +13,27 @@ class NewsDetailPage extends StatefulWidget {
 
 class _NewsDetailPageState extends State<NewsDetailPage> {
   bool isLoading = true;
+  late final WebViewController controller;
+  late NewsItem details;
+  @override
+  void initState() {
+    super.initState();
+    details = Get.arguments;
+    controller = WebViewController()
+      ..loadRequest(
+        Uri.parse(details.webUrl!),
+      );
+  }
+
   @override
   Widget build(BuildContext context) {
     NewsItem details = Get.arguments;
     return Scaffold(
-      appBar: AppBar(
-        title: Text(details.webTitle!),
-      ),
-      body: Stack(
-        children: [
-          WebView(
-            initialUrl: details.webUrl!,
-            onProgress: (int progress) {
-              logInfo('WebView is loading (progress : $progress%)');
-            },
-            onPageFinished: (finish) {
-              setState(() {
-                isLoading = false;
-              });
-            },
-          ),
-          isLoading
-              ? const Center(
-                  child: CircularProgressIndicator(),
-                )
-              : Stack(),
-        ],
-      ),
-    );
+        appBar: AppBar(
+          title: Text(details.webTitle!),
+        ),
+        body: WebViewWidget(
+          controller: controller,
+        ));
   }
 }
